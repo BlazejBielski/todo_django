@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Todo(models.Model):
+class TodoList(models.Model):
     id = models.IntegerField()
     title = models.CharField()
     done = models.BooleanField()
