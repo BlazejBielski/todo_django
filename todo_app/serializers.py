@@ -2,7 +2,11 @@ from .models import TodoList
 from rest_framework import serializers
 
 
-class TodoListSerializer(serializers.HyperlinkedModelSerializer):
+class TodoListSerializer(serializers.ModelSerializer):
+
+    list = serializers.HyperlinkedRelatedField
+    read_only = True
+    view_name = "todolist"
 
     class Meta:
 
