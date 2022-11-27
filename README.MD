@@ -1,0 +1,5 @@
+# TODO
+
+## Technology:
+- Django
+- Json
